@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Froggie</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="are_you_sure_want_to_exit">Are you sure that you want to exit?</string>
+</resources>

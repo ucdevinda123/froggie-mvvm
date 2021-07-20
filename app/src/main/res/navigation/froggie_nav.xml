@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/proggie_nav.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.froggie.design.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_playerFragment"
+            app:destination="@id/playerFragment" />
+        <argument
+            android:name="AnimationData"
+            app:argType="com.froggie.design.repository.data.Result" />
+    </fragment>
+    <activity
+        android:id="@+id/splashActivity"
+        android:name="com.froggie.design.ui.SplashActivity"
+        android:label="SplashActivity" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.froggie.design.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/playerFragment"
+        android:name="com.froggie.design.ui.player.PlayerFragment"
+        android:label="Lottie Player">
+
+        <argument
+            android:name="AnimationData"
+            app:argType="com.froggie.design.repository.data.Result" />
+    </fragment>
+</navigation>

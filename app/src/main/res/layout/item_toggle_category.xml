@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:tabGravity="fill"
+    app:tabMode="fixed"
+    android:layout_height="match_parent">
+
+    <nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup
+        android:id="@+id/designCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        app:justifyContent="center"> <!-- this attribute is from the underlying FlexboxLayout -->
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+            android:id="@+id/popular"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            app:toggle_selectedBackgroundColor="@color/teal_200"
+            app:toggle_text="Popular" />
+
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+            android:id="@+id/featured"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            app:toggle_selectedBackgroundColor="@color/teal_200"
+            app:toggle_text="Featured" />
+
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+            android:id="@+id/recent"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            app:toggle_selectedBackgroundColor="@color/teal_200"
+            app:toggle_text="Recent" />
+
+    </nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup>
+</LinearLayout>

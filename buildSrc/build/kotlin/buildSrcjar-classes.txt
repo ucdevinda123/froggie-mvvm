@@ -1,0 +1,1 @@
+/Users/chinthaka/test/Froggie/buildSrc/build/classes/kotlin/main/dependencies/Dependencies.class:/Users/chinthaka/test/Froggie/buildSrc/build/classes/kotlin/main/dependencies/Versions.class

@@ -1,0 +1,82 @@
+import dependencies.*
+
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'dagger.hilt.android.plugin'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+    id 'androidx.navigation.safeargs.kotlin'
+}
+
+android {
+    compileSdkVersion Versions.compileSdkVersion
+    buildToolsVersion Versions.buildToolsVersion
+
+    defaultConfig {
+        applicationId Versions.applicationId
+        minSdkVersion Versions.minSdkVersion
+        targetSdkVersion Versions.targetSdkVersion
+        versionCode Versions.versionCode
+        versionName Versions.applicationVersion
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation Dependencies.kotlinStandardLibrary
+
+    implementation Dependencies.hiltAndroid
+    kapt Dependencies.hiltAndroidCompiler
+    kapt Dependencies.hiltCompiler
+
+    implementation Dependencies.glide
+    implementation Dependencies.lottie
+    implementation Dependencies.circularImageView
+    implementation Dependencies.toggleButton
+    implementation Dependencies.shimmer
+
+    implementation Dependencies.retrofit
+    implementation Dependencies.retrofitGsonConverter
+
+    // Room Db
+    implementation Dependencies.roomRuntime
+    implementation Dependencies.roomKtx
+    kapt Dependencies.roomCompiler
+
+    // LiveData
+    implementation Dependencies.lifeCycleLiveDataKtx
+
+    // Navigation
+    implementation Dependencies.navigationFragment
+    implementation Dependencies.navigationUi
+
+    implementation Dependencies.ktxCoreLibrary
+    implementation Dependencies.appCompact
+    implementation Dependencies.androidMaterialDesign
+    implementation Dependencies.constraintLayout
+    implementation Dependencies.androidSupportDependency
+    testImplementation Dependencies.junit
+    androidTestImplementation Dependencies.androidJunit
+    androidTestImplementation Dependencies.espresso
+}
