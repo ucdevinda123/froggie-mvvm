@@ -38,7 +38,8 @@ Currently, it plays lottie animations created by designers but it will not only 
     * [Navigation Component](https://developer.android.com/guide/navigation/navigation-getting-started)
     
 ### 2.)Screens 
-![splash](https://user-images.githubusercontent.com/4921099/126254554-edc392cf-57d0-48e4-9b16-17bda5b82631.png)
+
+<img width="397" alt="splash" src="https://user-images.githubusercontent.com/4921099/126254554-edc392cf-57d0-48e4-9b16-17bda5b82631.png">  
 <img width="397" alt="home_loading" src="https://user-images.githubusercontent.com/4921099/126253525-86445218-76e4-4a66-a821-4be3370677bb.png">  
 <img width="396" alt="popular" src="https://user-images.githubusercontent.com/4921099/126253615-3b637acd-6ed4-4abb-a2a2-d1805e9221f0.png">
 <img width="396" alt="recent" src="https://user-images.githubusercontent.com/4921099/126253678-dcfd0753-2d4a-4443-80f1-4cbd445fcbaf.png">
